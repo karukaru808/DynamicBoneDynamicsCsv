@@ -4,15 +4,15 @@ using UnityEngine;
 
 namespace CIFER.Tech.DynamicBoneDynamicsCsv
 {
-    public class DynamicBoneDynamicsCsvSaveLoaderWindow : EditorWindow
+    public class DynamicBoneDynamicsCsvWindow : EditorWindow
     {
         private static Transform _targetRoot;
         private bool _isDynamicBoneSaveLoad = true, _isColliderSaveLoad = true;
 
-        [MenuItem("CIFER.Tech/DynamicBoneDynamicsCsvSaveLoader")]
+        [MenuItem("CIFER.Tech/DynamicBoneDynamicsCsv")]
         private static void Open()
         {
-            var window = GetWindow<DynamicBoneDynamicsCsvSaveLoaderWindow>("DB CSV SL");
+            var window = GetWindow<DynamicBoneDynamicsCsvWindow>("DB CSV");
             window.minSize = new Vector2(350f, 200f);
 
             _targetRoot = GetRootBone();
